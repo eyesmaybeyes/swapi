@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Star Wars</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <section class="info">
+            <h1 class="title">Кого или что будем искать?</h1>
+            <select name="type" class="form-select" id="selectType">
+                <option selected value="people">Людей</option>
+                <option value="planets">Планеты</option>
+                <!-- <option value="films">Фильмы</option> -->
+                <option value="species">Виды</option>
+                <option value="starships">Звездолёты</option>
+                <option value="vehicles">Транспортные средства</option>
+            </select>
+            <input
+                name="number"
+                type="number"
+                class="input"
+                min="1"
+                placeholder="Введите номер"
+                required
+            />
+            <button type="submit" id="button" class="btn">Вперёд!</button>
+            <div class="container"></div>
+            <div class="error"></div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
