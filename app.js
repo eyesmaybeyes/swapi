@@ -56,11 +56,7 @@ function CreateInfo(result) {
 
             if (key === 'name') {
 
-                htmlInfo = `
-
-                <p class='para'>Информация: ${value}</p>
-                
-                `;
+                htmlInfo = `<p class='para'>Информация: ${value}</p>`;
 
                 containerHtml.innerHTML = htmlInfo;
 
@@ -69,18 +65,13 @@ function CreateInfo(result) {
             }
             if (value == 'Not found') {
 
-                htmlError = `
-
-                <p class='para'>Ошибка: объект не найден!</p>
-                
-                `;
+                htmlError = `<p class='para'>Ошибка: объект не найден!</p>`;
 
                 errorHtml.innerHTML = htmlError;
 
                 containerHtml.innerHTML = ''
 
             }
-            // console.log(`Key: ${key}, Value: ${value} `);
         }
     }
 }
